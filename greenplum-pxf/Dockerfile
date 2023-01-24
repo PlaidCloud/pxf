@@ -11,6 +11,7 @@ RUN apt-get update \
 
 WORKDIR /workspace/pxf/
 
+ENV PATH="/usr/local/gpdb/bin/:${PATH}"
 ENV GPHOME=/usr/local/gpdb
 ENV PXF_HOME=/usr/local/pxf
 ENV PXF_BASE=${HOME}/pxf-base
