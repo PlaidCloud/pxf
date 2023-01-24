@@ -16,6 +16,8 @@ ENV GPHOME=/usr/local/gpdb
 ENV PXF_HOME=/usr/local/pxf
 ENV PXF_BASE=${HOME}/pxf-base
 
-RUN make \
-&& chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}" \
-&& make -C ~/workspace/pxf install
+RUN make
+
+RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
+
+RUN make -C ~/workspace/pxf install
