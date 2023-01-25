@@ -19,7 +19,7 @@ ENV GPHOME=/usr/local/gpdb
 ENV PXF_HOME=/usr/local/pxf
 ENV PXF_BASE=${HOME}/pxf-base
 ENV GOPATH=$/usr/local/go
-ENV PATH=${PATH}:${GOPATH}/bin:/usr/local/gpdb/bin/
+ENV PATH=${PATH}:/usr/local/go/bin:/usr/local/gpdb/bin/
 
 RUN go install github.com/onsi/ginkgo/ginkgo@v1.16.5
 
