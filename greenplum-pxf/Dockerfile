@@ -21,6 +21,6 @@ ENV PATH=/usr/local/go/bin:${GOPATH}/bin:/usr/local/gpdb/bin/:${PATH}
 
 # RUN make
 
-RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
+# RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
 
 RUN make -C ~/workspace/pxf install
