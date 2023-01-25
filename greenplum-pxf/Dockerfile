@@ -8,7 +8,7 @@ RUN apt-get update \
 && apt-get install -y unzip maven default-jdk curl \
     && echo 'JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"' >> /etc/environment
 
-RUN curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
+RUN curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz \
 && tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
 
 
