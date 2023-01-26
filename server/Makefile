@@ -71,7 +71,7 @@ coverage:
 
 .PHONY: stage
 stage:
-	./gradlew $(PXF_GRADLE_PROPERTIES) test stage --info --debug
+	./gradlew $(PXF_GRADLE_PROPERTIES) test stage
 	install -m 744 -d "build/stage/pxf/lib"
 	install -m 744 -d "build/stage/pxf/lib/native"
 	install -m 744 -d "build/stage/pxf/servers"
