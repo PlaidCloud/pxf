@@ -7,7 +7,7 @@ export PXF_VERSION
 
 FDW_SUPPORT = $(shell $(PG_CONFIG) --version | egrep "PostgreSQL 12")
 
-HEADERS = extaccess.h
+HEADERS = extaccess.h # From here: https://github.com/greenplum-db/gpdb/pull/14046
 
 SOURCE_EXTENSION_DIR = external-table
 TARGET_EXTENSION_DIR = gpextable

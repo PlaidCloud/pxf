@@ -10,6 +10,8 @@ PGXS := $(shell $(PG_CONFIG) --pgxs)
 PXF_API_VERSION := $(shell cat ../api_version)
 PG_CPPFLAGS := -DPXF_API_VERSION=\"$(PXF_API_VERSION)\"
 
+HEADERS = extaccess.h
+
 ifndef PGXS
     $(error Make sure the Greenplum installation binaries are in your PATH. i.e. export PATH=<path to your greenplum installation>/bin:$$PATH)
 endif
