@@ -7,6 +7,8 @@ export PXF_VERSION
 
 FDW_SUPPORT = $(shell $(PG_CONFIG) --version | egrep "PostgreSQL 12")
 
+HEADERS = extaccess.h
+
 SOURCE_EXTENSION_DIR = external-table
 TARGET_EXTENSION_DIR = gpextable
 ifneq ($(FDW_SUPPORT),)
