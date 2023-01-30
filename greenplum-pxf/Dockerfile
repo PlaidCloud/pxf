@@ -23,8 +23,8 @@ ENV PATH=${PATH}:/usr/local/go/bin:/usr/local/gpdb/bin/
 
 RUN go install github.com/onsi/ginkgo/ginkgo@v1.16.5
 
-# RUN make
+RUN make
 
 # RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
 
-RUN make -C /workspace/pxf install
+# RUN make -C /workspace/pxf install
