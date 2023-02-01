@@ -25,7 +25,7 @@ PXF_ROOT_DIR := $(shell cd .. && pwd)
 PXF_VERSION ?= $(shell cat $(PXF_ROOT_DIR)/version)
 PXF_API_VERSION ?= $(shell cat $(PXF_ROOT_DIR)/api_version)
 
-PXF_GRADLE_PROPERTIES = -Pversion=$(PXF_VERSION) -PapiVersion=$(PXF_API_VERSION)
+PXF_GRADLE_PROPERTIES = -Pversion=$(PXF_VERSION) -PapiVersion=$(PXF_API_VERSION) --stacktrace
 
 help:
 	@echo
