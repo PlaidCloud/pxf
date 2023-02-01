@@ -207,6 +207,7 @@ configure(javaProjects) {
         dependsOn(removeIdeaOutDirectory)
     }
 
+
     compileJava {
         options.compilerArgs += [
                 "-g", "-Xlint:varargs", "-Xlint:cast", "-Xlint:classfile", "-Xlint:dep-ann", "-Xlint:divzero",
