@@ -25,6 +25,7 @@ RUN go install github.com/onsi/ginkgo/ginkgo@v1.16.5
 
 RUN make -C /workspace/pxf
 
+RUN mkdir PXF_HOME && mkdir PXF_BASE
 RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
 
-# RUN make -C /workspace/pxf install
+RUN make -C /workspace/pxf install
