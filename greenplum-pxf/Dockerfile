@@ -16,11 +16,11 @@ RUN curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz \
 WORKDIR /workspace
 
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-ENV GPHOME=/usr/local/gpdb
+ENV GPHOME=/usr/local/greenplum-db
 ENV PXF_HOME=/usr/local/pxf
 ENV PXF_BASE=${HOME}/pxf-base
 ENV GOPATH=/usr/local/go
-ENV PATH=${PATH}:/usr/local/go/bin:/usr/local/gpdb/bin/
+ENV PATH=${PATH}:/usr/local/go/bin:/usr/local/greenplum-db/bin/
 
 RUN go install github.com/onsi/ginkgo/ginkgo@v1.16.5
 
