@@ -1,5 +1,6 @@
 FROM gcr.io/plaidcloud-build/greenplum-oss:latest
 
+
 COPY ./ /workspace/pxf/
 
 WORKDIR /
