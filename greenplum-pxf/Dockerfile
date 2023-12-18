@@ -28,4 +28,5 @@ RUN make -C /workspace/pxf
 RUN mkdir "${PXF_HOME}" && mkdir "${PXF_BASE}"
 RUN chown -R gpadmin:gpadmin "${GPHOME}" "${PXF_HOME}"
 
+
 RUN make -C /workspace/pxf install
