@@ -33,4 +33,4 @@ jobs:
           file: greenplum-pxf/Dockerfile
           build-args: |
             PLAID_BUILD_TAG=${{ steps.docker_tag.outputs.tag }}
-          tags: gcr.io/plaidcloud-build/greenplum-pxf:latest,gcr.io/plaidcloud-build/greenplum-pxf:${{ github.ref_name }}-${{ github.run_number }}
+          tags: gcr.io/plaidcloud-build/greenplum-pxf-gp6:latest,gcr.io/plaidcloud-build/greenplum-pxf-gp6:${{ github.ref_name }}-${{ github.run_number }}

@@ -1,4 +1,4 @@
-FROM gcr.io/plaidcloud-build/greenplum-oss:latest
+FROM gcr.io/plaidcloud-build/greenplum-oss-v6:latest
 
 COPY ./ /workspace/pxf/
 
