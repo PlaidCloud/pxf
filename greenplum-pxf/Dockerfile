@@ -11,7 +11,6 @@ RUN apt-get update \
 RUN curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz \
 && tar -C /usr/local -xvf go1.16.7.linux-amd64.tar.gz
 
-
 WORKDIR /workspace
 
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
